@@ -3,7 +3,6 @@ import numpy as np
 
 FILE = "titles_cleaned.csv"
 
-
 def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df.columns = (
