@@ -9,7 +9,7 @@ def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
         df.columns
         .astype(str)
         .str.strip()
-        .str.replace(r"\s+", "", regex=True)  # remove ALL whitespace inside names too
+        .str.replace(r"\s+", "", regex=True)
     )
     return df
 
