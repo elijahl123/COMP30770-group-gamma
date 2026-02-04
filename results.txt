@@ -1,0 +1,69 @@
+
+=== SENTIMENT REPORT ===
+Rows: 55932
+Missing SentimentTitle: 0
+Missing SentimentHeadline: 0
+
+--- Describe (Title Sentiment) ---
+count    55932.000000
+mean        -0.006318
+std          0.137569
+min         -0.838525
+25%         -0.079057
+50%          0.000000
+75%          0.063969
+max          0.962354
+Name: SentimentTitle, dtype: float64
+
+--- Describe (Headline Sentiment) ---
+count    55932.000000
+mean        -0.029577
+std          0.143038
+min         -0.755355
+25%         -0.116927
+50%         -0.027277
+75%          0.057354
+max          0.964646
+Name: SentimentHeadline, dtype: float64
+
+--- Correlation (Title vs Headline sentiment) ---
+0.18558396451115264
+
+--- Bucket Counts (Title) ---
+BucketTitle
+neutral     23346
+negative    17196
+positive    15390
+Name: count, dtype: int64
+
+--- Bucket Counts (Headline) ---
+BucketHeadline
+negative    24194
+neutral     16446
+positive    15292
+Name: count, dtype: int64
+
+--- Bucket disagreement rate (Title bucket != Headline bucket) ---
+0.6075949367088608
+
+--- Top 15 rows with largest Title vs Headline sentiment absolute difference ---
+ SentimentTitle  SentimentHeadline                                                                             Title                                                                                                                                                                                                                                                                                                                                                                    Headline     Topic                        Source     IDLink BucketTitle BucketHeadline  AbsDiff
+      -0.618718           0.728607                         Economic Growth Makes Workers More Valuable, Not Mandates                                                                                                                                                                                                                              A healthy economy is the best way to raise wages """ more jobs, better pay, as in 2000 when a record percent of the population age 16 and over   economy                        Forbes gqtQVdquZY    negative       positive 1.347325
+       0.714610          -0.463606      Microsoft Band 2: The Best Fitness Watch for People Who Really Like to Sweat For decades, Microsoft was considered a company distinguished by copycatting and mediocrity. But today, the company is leading, not following. The latest products, like the Surface Pro 4, the Surface Book, and Windows 10, are elegant, coherent, and truly innovative. The company name may be the same, but the people working there seem to be completely different.  microsoft    Yahoo Tech via Yahoo! News Q59Xao6f8b    positive       negative 1.178216
+      -0.319723           0.806952              North Korea wants to open up its economy, and a small program in ...                                                                                                                                                                                                                              But North Korea is very tentatively toying with some capitalist ideas, setting up about 20 special economic zones around the country, allowing   economy               Washington Post hdlzj2xSbM    negative       positive 1.126675
+       0.925000          -0.079497                                          Arkansas Economy Significantly Improving                                                                                                                                                                                                        The economy is improving significantly.Consumers are still a little bit apprehensive about running up credit card debt,but are feeling a little bit more comfortable   economy                          KARK gimztVEyph    positive       negative 1.004497
+      -0.626064           0.369792 Opinion: Why independent shops are not inherently more virtuous than large chains                                                                                                                                                                                                                                                                                 A successful and dynamic economy needs a whole range of businesses of all shapes and sizes    economy                Liverpool Echo rVm7RUjSX2    negative       positive 0.995856
+       0.962354          -0.010860                              We just got some really great news about the economy                                                                                                                                                                                                                                          The US economy created new jobs at an unexpectedly strong pace in December. There was a net increase of 292,000 jobs in the month,   economy                           Vox En29har9x9    positive        neutral 0.973214
+       0.508106          -0.461083               Economists call for cautious optimism about global economy at Davos                                                                                                                                                                                                                           &quot;We see global growth in 2016 as modest and uneven,&quot; Lagarde said at a panel meeting of the World Economic Forum Annual Meeting, adding   economy Shanghai Daily (subscription) axHBktAVyV    positive       negative 0.969189
+      -0.765466           0.196021                                             Not all premium economy created equal                                                                                                                                                                                                                                      According to Jami Counter, who charts premium economy sections for TripAdvisor's SeatGuru website, the answer is clear: tiny OpenSkies   economy                 Travel Weekly cN6OOhSNxx    negative       positive 0.961487
+       0.291667          -0.657025                      China says slowing economy won't stop anti-pollution efforts                                                                                                                                                                                                                                  China will not go back to its era of pursuing economic growth at the expense of the environment despite its slowing economy, the country's   economy                  Inquirer.net FYvgOHex7X    positive       negative 0.948691
+       0.291667          -0.635586                                           What It Was Like to Teach Obama to Code                                                                                                                                                                                                                                   This is a great story. Code.org launched in 2013 with a video, and we had little more than a video, a great name, and a web site. I was a     obama               Huffington Post 6S1FbMh7Vd    positive       negative 0.927253
+      -0.746241           0.168637               RAC survey says motorists are more worried by fuel economy than ...                                                                                                                                                                                                                                      Almost three quarters of motorists said they're more bothered about their fuel economy than health-harming emissions, according to new   economy                 This is Money O1mKDH2FKK    negative       positive 0.914877
+       0.367423          -0.540089                                                       Builders may pay more in EP                                                                                                                                                                                                                                     EAST PALESTINE - The village is considering a move that would bring in more revenue in building permit fees for commercial properties.  palestine        Lisbon Morning Journal ZRR8t7bmNk    positive       negative 0.907513
+      -0.614192           0.281840                                     Eyal Goldshmid: Game ruined by Windows 10 bug                                                                                                                                                                                                                         Q.: I recently downloaded Windows 10 and really like it except for an issue I am having with my Microsoft Solitaire Collection application. In that microsoft                        TCPalm fkU7ciZZsP    negative       positive 0.896032
+      -0.330719           0.561341                   Chikadya defends retrenchments: Blame Malawi ailing economy ...                                                                                                                                                                                                                                  Times Group publishes three titles Daily Times, Sunday Times, Malawi News and also owns Times TV, radio and Times Courier. But In the past   economy                   Nyasa Times cyVhkESHDp    negative       positive 0.892060
+      -0.355756           0.498509                Sharing economy: Growth of part-time, flexible jobs offered by ...                                                                                                                                                                                                                       They call it the """sharing economy""" and it is an evolving and apparently very welcome application of the new technologies to working life """ and,   economy               The Independent Cs54WrCQas    negative       positive 0.854266
+
+Saved files:
+- sentiment_only_cleaned.csv
+- top_sentiment_divergences.csv
